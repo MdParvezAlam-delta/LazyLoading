@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <h1 className='text-5xl font-bold tracking-tight text-gray-1000 ' >Lazy Loading</h1>
-      <Suspense fallback={<h2>Please Wait Data Loading...</h2>}>
+      <Suspense fallback={<h2>Please Wait for Data Loading...</h2>}>
         <Data />
       </Suspense>
     </div>
