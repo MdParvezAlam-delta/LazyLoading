@@ -114,9 +114,9 @@ const Data = () => {
   const totalEngagement = mapStats.reduce((s, x) => s + parseFloat(x.engagement), 0)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 px-4 py-8 font-sans text-slate-100 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-850 to-slate-900 px-4 py-8 font-sans text-slate-100 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-8 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-8 shadow-2xl shadow-black/30">
+        <div className="mb-8 overflow-hidden rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl shadow-black/25 backdrop-blur-md">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             🔥 Ultra Heavy Data Component
           </h2>
@@ -125,10 +125,10 @@ const Data = () => {
           </p>
         </div>
 
-        <section className="mb-8 rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 hover:shadow-2xl">
+        <section className="mb-8 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/20 backdrop-blur-md transition-all duration-300 hover:border-slate-700/70">
           <h3 className="mb-6 text-2xl font-bold text-slate-100">📊 Summary Dashboard</h3>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="group relative overflow-hidden rounded-xl border border-blue-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
+            <div className="group relative overflow-hidden rounded-2xl border border-blue-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
               <div className="absolute right-2 top-2 opacity-10 group-hover:opacity-20 text-blue-400">
                 <svg className="h-16 w-16" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
@@ -138,27 +138,27 @@ const Data = () => {
               <p className="mt-2 text-3xl font-extrabold text-white">{heavyData.length.toLocaleString()}</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-xl border border-emerald-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-emerald-400/40 hover:shadow-lg hover:shadow-emerald-500/10">
+            <div className="group relative overflow-hidden rounded-2xl border border-emerald-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-emerald-400/30 hover:shadow-lg hover:shadow-emerald-500/10">
               <p className="text-sm font-medium text-emerald-300">Filtered Items</p>
               <p className="mt-2 text-3xl font-extrabold text-white">{filtered.length.toLocaleString()}</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-xl border border-violet-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-violet-400/40 hover:shadow-lg hover:shadow-violet-500/10">
+            <div className="group relative overflow-hidden rounded-2xl border border-violet-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-violet-400/30 hover:shadow-lg hover:shadow-violet-500/10">
               <p className="text-sm font-medium text-violet-300">Total Engagement</p>
               <p className="mt-2 text-3xl font-extrabold text-white">{totalEngagement.toFixed(2)}</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-xl border border-amber-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-500/10">
+            <div className="group relative overflow-hidden rounded-2xl border border-amber-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-amber-400/30 hover:shadow-lg hover:shadow-amber-500/10">
               <p className="text-sm font-medium text-amber-300">Search Index Words</p>
               <p className="mt-2 text-3xl font-extrabold text-white">{Object.keys(searchIndex).length.toLocaleString()}</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-xl border border-rose-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-rose-400/40 hover:shadow-lg hover:shadow-rose-500/10">
+            <div className="group relative overflow-hidden rounded-2xl border border-rose-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-rose-400/30 hover:shadow-lg hover:shadow-rose-500/10">
               <p className="text-sm font-medium text-rose-300">Matrix Sum</p>
               <p className="mt-2 text-3xl font-extrabold text-white">{matrixSum.toLocaleString()}</p>
             </div>
 
-            <div className="group relative overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-cyan-400/40 hover:shadow-lg hover:shadow-cyan-500/10">
+            <div className="group relative overflow-hidden rounded-2xl border border-cyan-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-cyan-400/30 hover:shadow-lg hover:shadow-cyan-500/10">
               <p className="text-sm font-medium text-cyan-300">Prime IDs (20k)</p>
               <p className="mt-2 text-3xl font-extrabold text-white">
                 {deepAnalysis.filter(d => d.isPrime).length.toLocaleString()}
@@ -167,13 +167,13 @@ const Data = () => {
           </div>
         </section>
 
-        <section className="mb-8 rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 hover:shadow-2xl">
+        <section className="mb-8 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
           <h3 className="mb-6 text-2xl font-bold text-slate-100">📁 Grouped Categories</h3>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {Object.entries(grouped).slice(0, 15).map(([key, items]) => (
               <div
                 key={key}
-                className="group flex items-center justify-between rounded-xl border border-white/10 bg-slate-800/70 px-4 py-4 transition-all duration-200 hover:border-indigo-400/40 hover:bg-slate-800 hover:shadow-md hover:shadow-indigo-500/10"
+                className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-800/60 px-4 py-4 transition-all duration-200 hover:border-indigo-400/30 hover:bg-slate-800"
               >
                 <p className="font-semibold text-slate-100">{key}</p>
                 <span className="rounded-full bg-indigo-500/15 px-3 py-1 text-xs font-semibold text-indigo-300 ring-1 ring-inset ring-indigo-400/20">
@@ -184,13 +184,13 @@ const Data = () => {
           </div>
         </section>
 
-        <section className="mb-8 rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 hover:shadow-2xl">
+        <section className="mb-8 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
           <h3 className="mb-6 text-2xl font-bold text-slate-100">🏆 Top 10 by Score</h3>
           <div className="space-y-4">
             {sortedByScore.slice(0, 10).map((item, idx) => (
               <div
                 key={item.id}
-                className="group flex flex-col gap-3 rounded-xl border border-white/10 bg-slate-800/70 p-5 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-lg hover:shadow-black/20 md:flex-row md:items-center md:justify-between"
+                className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-slate-800/60 p-5 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-lg md:flex-row md:items-center md:justify-between"
               >
                 <div className="flex items-center gap-3">
                   <span
@@ -211,7 +211,7 @@ const Data = () => {
                     </p>
                   </div>
                 </div>
-                <span className="inline-flex w-fit items-center rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 px-4 py-2 text-sm font-bold text-white shadow-sm shadow-violet-500/20">
+                <span className="inline-flex w-fit items-center rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 px-4 py-2 text-sm font-bold text-white shadow-sm">
                   Score: {item.score.toFixed(2)}
                 </span>
               </div>
@@ -219,13 +219,13 @@ const Data = () => {
           </div>
         </section>
 
-        <section className="mb-8 rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 hover:shadow-2xl">
+        <section className="mb-8 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
           <h3 className="mb-6 text-2xl font-bold text-slate-100">💰 Filtered Items (first 8)</h3>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {filtered.slice(0, 8).map(item => (
               <div
                 key={item.id}
-                className="group overflow-hidden rounded-xl border border-sky-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-sky-400/40 hover:shadow-lg hover:shadow-sky-500/10"
+                className="rounded-2xl border border-sky-500/15 bg-slate-800/60 p-5 transition-all duration-300 hover:scale-[1.02] hover:border-sky-400/30 hover:shadow-lg hover:shadow-sky-500/10"
               >
                 <div className="mb-3 flex items-start justify-between">
                   <p className="font-bold text-slate-100">{item.name}</p>
@@ -246,7 +246,7 @@ const Data = () => {
                 <p className="mb-3 text-xs text-slate-400">
                   Tags: {item.tags.slice(0, 3).join(', ')}...
                 </p>
-                <div className="flex items-center justify-between rounded-lg border border-white/10 bg-slate-950/70 px-3 py-2 shadow-sm">
+                <div className="flex items-center justify-between rounded-xl border border-white/10 bg-slate-950/60 px-3 py-2">
                   <span className="text-xs text-slate-400">Rating</span>
                   <span className="text-sm font-bold text-cyan-300">
                     {(item.reviews.reduce((s, r) => s + r.rating, 0) / item.reviews.length).toFixed(2)} ⭐
@@ -257,13 +257,13 @@ const Data = () => {
           </div>
         </section>
 
-        <section className="mb-8 rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 hover:shadow-2xl">
+        <section className="mb-8 rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
           <h3 className="mb-6 text-2xl font-bold text-slate-100">🔬 Deep Analysis (first 15)</h3>
           <div className="space-y-3">
             {deepAnalysis.slice(0, 15).map(d => (
               <div
                 key={d.id}
-                className="flex flex-col items-center justify-between gap-3 rounded-xl border border-white/10 bg-slate-800/60 px-5 py-4 transition-all duration-200 hover:border-indigo-400/30 hover:bg-slate-800 hover:shadow-md hover:shadow-black/20 sm:flex-row"
+                className="flex flex-col items-center justify-between gap-3 rounded-2xl border border-white/10 bg-slate-800/55 px-5 py-4 transition-all duration-200 hover:border-indigo-400/30 hover:bg-slate-800 sm:flex-row"
               >
                 <span className="text-sm font-semibold text-slate-300">
                   ID: <span className="text-indigo-300">{d.id}</span>
@@ -279,13 +279,13 @@ const Data = () => {
           </div>
         </section>
 
-        <section className="rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 hover:shadow-2xl">
+        <section className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
           <h3 className="mb-6 text-2xl font-bold text-slate-100">📋 Sample Records</h3>
           <div className="space-y-4">
             {heavyData.slice(0, 5).map(item => (
               <div
                 key={item.id}
-                className="group rounded-xl border border-white/10 bg-gradient-to-r from-slate-800 to-slate-900 p-5 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-md hover:shadow-black/20"
+                className="rounded-2xl border border-white/10 bg-slate-800/60 p-5 transition-all duration-300 hover:border-indigo-400/30 hover:shadow-md"
               >
                 <div className="mb-3 flex flex-wrap items-center gap-2">
                   <p className="text-base font-bold text-slate-100">{item.name}</p>
